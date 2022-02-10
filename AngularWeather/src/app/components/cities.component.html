@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h2>Cities</h2>
+  <p>Select a city from below and their weather will be generated for you!</p>
+
+  <div class="city-style" *ngFor="let city of cities" [routerLink]="['/weather',city]" (click)="go(city)">
+    {{city}}</div>
+  <p>
+    <i>Information obtained from OpenWeatherMap API</i>
+  </p>
+</div>

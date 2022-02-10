@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row col-l-12 text-center">
+    <h1>Weather: {{city |uppercase}}</h1>
+
+    <table>
+      <tr>
+        <td>
+          <img src="http://openweathermap.org/img/wn/{{weather?.icon}}@2x.png" alt={{weather?.main}}>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            Weather: {{weather?.main}}
+            <br>
+            Description: {{weather?.description}}
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Temperature: {{weather?.temp}}
+          <br>
+          Maximum Temperature: {{weather?.maxTemp}}
+          <br>
+          Minimum Temperature: {{weather?.minTemp}}
+        </td>
+      </tr>
+
+    </table>
+    <br>
+    <button type="button" [routerLink]="['/']">Back</button>
+
+
+
+
+
+
+  </div>
+</div>
